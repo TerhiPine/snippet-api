@@ -8,6 +8,10 @@ Perfect for creating a personal knowledge base of reusable code.
 
 tore code snippets (JS, Python, etc.)
 
+##
+
+Video tba
+
 ## CRUD operations:
 
 - Create (POST)
@@ -121,3 +125,15 @@ DELETE by ID
 
 Curl
 ![curl](https://github.com/user-attachments/assets/c5a9c18b-9251-4391-854a-27bb30c285c9)
+
+## Reflection + Self-assesment
+
+During this project, I learned how to design and implement a complete REST API using Node.js, Express, MongoDB, and Mongoose. A major part of the learning process involved understanding how routing, controllers, and database models work together. Even though the CRUD structure is conceptually simple, implementing proper error handling, status codes, and validation required careful planning.
+
+One of the most significant technical challenges I encountered was testing the API locally. The assignment required using Postman or curl, but on my ASUS Windows device, PowerShell repeatedly interfered with standard curl syntax. PowerShell overrides curl with Invoke-WebRequest, which caused parsing errors, escaping issues, and invalid JSON errors. Even when calling curl.exe directly, PowerShell sometimes broke the command or interpreted characters incorrectly. These issues were not caused by the API itself, but by PowerShell’s built-in command aliases and quoting rules.
+
+Because of this, I switched to Invoke-RestMethod, which is PowerShell’s native and reliable way to send JSON HTTP requests. It allowed me to send POST, PUT, and DELETE requests without escape-character conflicts. I still demonstrated curl separately to satisfy the assignment requirement, but for real debugging and development, Invoke-RestMethod was the only consistently working method in my environment.
+
+Deployment also provided valuable experience, especially handling environment variables and understanding differences between local and hosted environments. Overall, the project strengthened my confidence in backend development and practical debugging.
+
+I believe I successfully met all project requirements. My API includes all required routes (GET all, GET by ID, POST, PUT/PATCH, DELETE), uses MongoDB with Mongoose, and returns proper JSON responses and status codes. I included local testing evidence with both curl and Invoke-RestMethod, documenting the technical limitations of PowerShell on my system. The project is deployed online, and the README contains setup instructions for Windows and macOS. While there is room for further enhancements, the core functionality, documentation, and deployment all meet the assignment’s expectations.
