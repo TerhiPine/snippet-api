@@ -8,9 +8,20 @@ Perfect for creating a personal knowledge base of reusable code.
 
 tore code snippets (JS, Python, etc.)
 
-##
+## Video & Live URL
 
-Video tba
+Watch the demo video: [Code Snippet API Demo](https://youtu.be/OPlSbd9mQkE)
+
+Timestamps:
+
+- 00:00 Sart server
+- 00:05 GET all
+- 00:13 GET by ID
+- 00:20 GET by tag/language
+- 00:34 POST
+- 00:46 PUT
+- 01:06 DELETE
+
 
 ## CRUD operations:
 
