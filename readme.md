@@ -6,7 +6,7 @@ Built with Node.js, Express, and MongoDB (Mongoose).
 This tool allows developers to save, tag, update, delete and filter code snippets by language.
 Perfect for creating a personal knowledge base of reusable code.
 
-tore code snippets (JS, Python, etc.)
+Store code snippets (JS, Python, etc.)
 
 ## Video & Live URL
 
@@ -21,6 +21,8 @@ Timestamps:
 - 00:34 POST
 - 00:46 PUT
 - 01:06 DELETE
+
+  [Code Snippet API](https://snippet-api-ypl3.onrender.com/) on Render
 
 
 ## CRUD operations:
