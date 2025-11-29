@@ -1,22 +1,53 @@
-export default function Filter({ filterLang, setFilterLang, languages }) {
+export default function Filter({
+  filterLang,
+  setFilterLang,
+  languages,
+  filterTag,
+  setFilterTag,
+  tags,
+  search,
+  setSearch,
+}) {
   return (
-    <div className="mb-4">
-      <label className="mr-2 font-medium" htmlFor="languageFilter">
-        Filter by language:
-      </label>
+    <div className="flex flex-wrap gap-2 mb-4">
+      {/* Search input */}
+      <input
+        type="text"
+        placeholder="Search by title, description, code..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="border p-2 rounded flex-1 min-w-[200px]"
+      />
+
+      {/* Language filter */}
       <select
-        id="languageFilter"
         value={filterLang}
         onChange={(e) => setFilterLang(e.target.value)}
         className="border p-2 rounded"
       >
-        <option value="">All</option>
+        <option value="">All languages</option>
         {languages.map((lang) => (
-          <option key={lang} value={lang.toLowerCase()}>
-            {lang.charAt(0).toUpperCase() + lang.slice(1)}
+          <option key={lang} value={lang}>
+            {lang}
+          </option>
+        ))}
+      </select>
+
+      {/* Tag filter */}
+      <select
+        value={filterTag}
+        onChange={(e) => setFilterTag(e.target.value)}
+        className="border p-2 rounded"
+      >
+        <option value="">All tags</option>
+        {tags.map((tag) => (
+          <option key={tag} value={tag}>
+            {tag}
           </option>
         ))}
       </select>
     </div>
   );
 }
+
+
