@@ -1,4 +1,7 @@
-const BASE_URL = "http://localhost:3000/api/snippets"; // tai live Render URL
+const BASE_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://snippet-api-1.onrender.com/api/snippets"
+    : "http://localhost:3000/api/snippets";
 
 export const getAllSnippets = async () => {
   const res = await fetch(BASE_URL);
