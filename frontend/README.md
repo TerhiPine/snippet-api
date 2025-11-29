@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Code Snippet Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application to manage and share code snippets. Built with **React** for the frontend and **Node.js + Express + MongoDB** for the backend. Features include syntax highlighting, "Copy to Clipboard", live preview, and filtering by language and tags.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Video ja Live URL
+Frontend + Backend live on [Render](https://snippet-api-1.onrender.com)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Grid view** of snippets with language badges
+- **Syntax highlighting** using `react-syntax-highlighter`
+- **Copy to Clipboard** button with feedback animation
+- **Live preview** when adding a new snippet
+- **Search** by title, description, language, or code
+- **Filter** snippets by language or tags
+- **CRUD operations**: create, read, update, delete snippets
+- **Responsive design** using Tailwind CSS
+- **Error handling** and loading states for API calls
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- Frontend: React, Tailwind CSS, react-syntax-highlighter  
+- Backend: Node.js, Express  
+- Database: MongoDB (via Mongoose)  
+- Deployment: Render  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository:
 
-### `npm run eject`
+```bash
+git clone https://github.com/terhipine/snippet-api.git
+cd snippet-api
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Frontend:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd ../frontend
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The frontend will run on http://localhost:3001 and communicate with the backend API on http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+Add new snippets using the form with Title, Language, Code, Description, and Tags.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Snippets are displayed in a grid layout, with syntax-highlighted code.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Filter snippets by language or tags.
 
-### Code Splitting
+Search snippets by any field.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Edit or delete existing snippets directly in the UI.
 
-### Analyzing the Bundle Size
+Use the Copy button to copy code to clipboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
 
-### Making a Progressive Web App
+(To be added)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
