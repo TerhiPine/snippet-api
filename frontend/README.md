@@ -7,6 +7,8 @@ A web application to manage and share code snippets. Built with **React** for th
 ## Video ja Live URL
 Frontend + Backend live on [Render](https://snippet-api-1.onrender.com)
 
+Demo video on [Youtube](https://youtu.be/IEweDuX5hRo)
+
 ---
 
 ## Features
