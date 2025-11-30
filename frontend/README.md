@@ -1,5 +1,8 @@
 # Code Snippet Library
 
+<img width="1199" height="860" alt="image" src="https://github.com/user-attachments/assets/575855c9-bc26-462c-84f6-88a3bfe2e8b6" />
+
+
 A web application to manage and share code snippets. Built with **React** for the frontend and **Node.js + Express + MongoDB** for the backend. Features include syntax highlighting, "Copy to Clipboard", live preview, and filtering by language and tags.
 
 ---
@@ -69,7 +72,11 @@ Use the Copy button to copy code to clipboard.
 
 ## Screenshots
 
-(To be added)
+<img width="1920" height="277" alt="Screenshot (408)" src="https://github.com/user-attachments/assets/ce7d36b6-87c6-4512-acff-e725c5243240" />
+
+
+<img width="529" height="374" alt="image" src="https://github.com/user-attachments/assets/c5b876f8-9500-4d83-bcdf-7e9455230af4" />
+
 
 
 
